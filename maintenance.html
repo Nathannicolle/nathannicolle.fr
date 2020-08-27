@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maintenance nathannicolle.fr</title>
+	<meta charset="utf-8">
+	<link href="css/all.css" rel="stylesheet">
+	<style type="text/css">
+		body
+		{
+			height: 100%;
+			width: 100%;
+			background-image: url("maintenance_background.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			font-family: consolas;
+			overflow: hidden;
+		}
+
+		h1
+		{
+			text-align: center;
+			word-wrap: break-word;
+			font-size: 2em;
+		}
+
+		h2
+		{
+			text-align: center;
+			word-wrap: break-word;
+			font-size: 1.7em;
+		}
+
+		#container
+		{
+			display: flex;
+			flex-direction: column;
+			transform: translateY(50%);
+			height: 100%;
+			max-width: 100%;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		.container_sm
+		{
+			display: flex;
+		}
+
+		.social_media
+		{
+			font-size: 1.8em;
+			border: 3px solid white;
+			width: 34px;
+			height: 34px;
+			text-align: center;
+			border-radius: 50px;
+			padding: 5px;
+			transition: 0.5s;
+		}
+
+		.social_media i
+		{
+			color: white;
+			transition: 0.5s;
+		}
+
+		.social_media:hover
+		{
+			background-color: white;
+		}
+
+		.social_media:hover i
+		{
+			color: black;
+			animation-name: flash;
+			animation-duration: 2s;
+		}
+
+		#insta
+		{
+			margin-right: 5px;
+		}
+
+		@keyframes flash
+		{
+			50%
+			{
+				color: white
+			}
+		}
+
+		@media screen and (max-width: 1024px)
+		{
+			body
+			{
+				background-size: 400%;
+			}
+
+			#container
+			{
+				width: 100%;
+			}
+
+			h1
+			{
+				font-size: 3em;
+			}
+
+			h2
+			{
+				font-size: 2.7em;
+			}
+
+			.social_media
+			{
+				font-size: 3em;
+				border: 3px solid white;
+				width: 68px;
+				height: 68px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h1>Maintenance du site nathannicolle.fr</h1>
+		<h2>La mise à jour du site sortira samedi 29 août à 18h (heure française)</h2>
+		<div class="container_sm">
+			<div class="social_media" id="insta">
+				<a href="https://www.instagram.com/nathannicolle2/" target="blank" title="@nathannicolle2"><i class="fab fa-instagram"></i></a>
+			</div>
+			<div class="social_media">
+				<a href="mailto:assistance@nathannicolle.fr" target="blank"><i class="far fa-envelope"></i></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
