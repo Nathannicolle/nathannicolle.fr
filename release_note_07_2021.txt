@@ -1,0 +1,23 @@
+Patch/Release note màj Juillet 2021 :
+- Relatif au profil pro :
+  > Liens smooth sur le profil pro
+  > Mise à jour des compétences sur le profil pro
+  > Mise à jour des expériences sur le profil pro
+  > CV mis à jour sur la page professionnelle
+
+- Relatif à mon blog :
+  > Ajout de formulaires de contact sur ma page d'accueil et sur ma page à propos
+  > Ajout d'un filigramme "NEW" sur la dernière actualité afin de mieux voir quel
+  actualitée est récente/nouvelle
+  > Ajout d'une animation sur la page d'accueil au clic sur le bouton "voir plus"
+  > Ajout d'une animation smooth pour revenir en haut des pages autres que l'accueil
+  > Ajout des langages utilisés pour le projet en dessous de chaque site de la rubrique
+  "mes sites" sur la page "créations"
+  > Liens de la page d'accueil du site dont les flèches bougent au survol
+  > Liens des pages d'actus du site dont les flèches bougent au survol
+  > Nouvelle structure incluant un menu et un footer dans des fichiers permettant
+  de faire un include à chaque page et d'éviter d'avoir à modifier quinze page
+  lors de l'ajout d'un élément au menu
+  > Actualisation des langages que j'utilise sur la page creation dans la partie "langages"
+  > Ajout d'un versioning au footer
+  > Le retour du favicon

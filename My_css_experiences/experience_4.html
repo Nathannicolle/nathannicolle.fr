@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My CSS experience - experience 4</title>
+	<style type="text/css">
+		body
+		{
+			margin: 0;
+			padding: 0;
+			background: #031321;
+			text-align: center;
+			font-family: consolas;
+		}
+
+		a
+		{
+			color: white;
+			text-decoration: none;
+		}
+
+		a:hover
+		{
+			color: #2196f3;
+			text-decoration: underline;
+		}
+
+		#allcontent
+		{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			height: 100%;
+			width: 100%;
+		}
+
+		#img_logo
+		{
+			position: relative;
+		}
+
+		.slidershow
+		{
+			width: 700px;
+			height: 400px;	
+			overflow: hidden;
+		}
+
+		.middle
+		{
+			position: relative;
+		}
+
+		.navigation
+		{
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;	
+		}
+
+		.bar
+		{
+			width: 50px;
+			height: 10px;
+			border: 2px solid #fff;
+			border-radius: 30px;	
+			cursor: pointer;
+			margin: 4px;
+			transition: 0.4s;
+		}
+
+		.bar:hover
+		{
+			background: #fff;
+		}
+
+		input[name="r"]{
+			position: absolute;
+			visibility: hidden;
+		}
+
+		.slides
+		{
+			width: 500%;
+			height: 100%;
+			display: flex;
+		}
+
+		.slide
+		{
+			width: 20%;
+			transition: 0.6s;
+		}
+
+		.slide img
+		{
+			width: 100%;
+			height: 100%;
+		}
+
+		#r1:checked ~ .s1
+		{
+			margin-left: 0;
+
+		}
+
+		#r2:checked ~ .s1
+		{
+			margin-left: -20%;
+			
+		}
+
+		#r3:checked ~ .s1
+		{
+			margin-left: -40%;
+			
+		}
+
+		#r4:checked ~ .s1
+		{
+			margin-left: -60%;
+			
+		}
+
+		#r5:checked ~ .s1
+		{
+			margin-left: -80%;
+			
+		}
+
+		h2
+		{
+			color: white;
+		}
+
+		h4
+		{
+			color:#2196f3;
+		}
+
+		#txt_foot
+		{
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<div id="allcontent">
+	<div id="img_logo"><img src="mycssexperience_logo.png"/></div>
+	<div class="slidershow middle">
+		<div class="slides">
+			<input type="radio" name="r" id="r1" checked>
+			<input type="radio" name="r" id="r2">
+			<input type="radio" name="r" id="r3">
+			<input type="radio" name="r" id="r4">
+			<input type="radio" name="r" id="r5">
+			<div class="slide s1">
+				<img src="1.jpg">
+			</div>
+			<div class="slide">
+				<img src="2.jpg">
+			</div>
+			<div class="slide">
+				<img src="3.jpg">
+			</div>
+			<div class="slide">
+				<img src="4.jpg">
+			</div>
+			<div class="slide">
+				<img src="5.jpg">
+			</div>
+			<div class="navigation">
+				<label for="r1" class="bar"></label>
+				<label for="r2" class="bar"></label>
+				<label for="r3" class="bar"></label>
+				<label for="r4" class="bar"></label>
+				<label for="r5" class="bar"></label>
+			</div>
+		</div>
+	</div>
+	<div id="txt_foot">
+		<h2>Ci-dessus se trouve un "diaporama"</br>
+		que vous pouvez faire défiler en</br>
+		en cliquant sur les rectangles </br> blancs les images proviennent</br>
+		du site <a href="https://www.pexels.com/" target="blank">www.pexels.com</a></h2>
+		<h4>Page 5/5</h4>
+	</div>
+	</div>
+</body>
+</html>

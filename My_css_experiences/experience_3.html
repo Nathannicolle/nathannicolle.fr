@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My CSS experience - experience 3</title>
+	<style type="text/css">
+		body
+		{
+			font-family: consolas;
+			margin: 0;
+			padding: 0;
+			background: #000;
+		}
+
+		#allelements
+		{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		a
+		{
+			position: relative;
+			width: 300px;
+			height: 60px;
+			line-height: 60px;
+			text-align: center;
+			color: #fff;
+			font-size: 24px;
+			text-transform: uppercase;
+			text-decoration: none;
+			box-sizing: border-box;
+			background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+			background-size: 400%;
+			border-radius: 30px;
+			z-index: 1;
+			margin-bottom: 10px;
+		}
+
+		a:hover
+		{
+			animation: animate 8s linear infinite;
+		}
+
+		@keyframes animate
+		{
+			0%
+			{
+				background-position: 0%;
+			}
+
+			100%
+			{
+				background-position: 400%;
+			}
+		}
+
+		a:before
+		{
+			content: '';
+			position: absolute;
+			top: -5px;
+			left: -5px;
+			right: -5px;
+			bottom: -5px;
+			z-index: -1;
+			background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+			background-size: 400%;
+			border-radius: 40px;
+			opacity: 0;
+			transition: 0.5s;
+			
+		}
+
+		a:hover:before
+		{
+			filter: blur(20px);
+			opacity: 1;
+			animation: animate 8s linear infinite;
+		}
+
+		img
+		{
+			position: relative;
+		}
+
+		h2
+		{
+			color: white;
+			position: relative;
+		}
+
+		h4
+		{
+			position: relative;
+			margin-top: 10px;
+			margin-bottom: 20px;
+			color:#2196f3;
+		}
+	</style>
+</head>
+<body>
+	<div id="allelements">
+		<img src="mycssexperience_logo.png"/>
+		<a href="experience_4.html">Page suviante</a>
+		<h2>Le bouton ci-dessus est un bouton qui
+		au survol</br> produit un effet 
+		de dégradé de couleur mouvant </br>avec un
+		effet de glow bougeant avec le dégradé</br> </h2>
+		<h4>Page 4/5</h4>
+	</div>
+</body>
+</html>

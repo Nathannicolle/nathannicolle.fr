@@ -1,0 +1,144 @@
+html, body
+{
+  height: 100%; 
+  background-color: #088A08; 
+  text-align: center;
+  font-family: arial;
+  color: black;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1
+{
+	font-size: 2.0em;
+}
+
+p
+{
+	font-size: 2.0em;
+	margin: 60px;
+	line-height: 160%;
+}
+
+#texte
+{
+	background-color: white;
+	margin: 90px;
+	box-shadow: 0px 2px 5px #1c1a19;
+}
+
+
+h3
+{
+	font-size:1.0em;
+	text-align: right;
+	margin: 50px;
+}
+
+#titles
+{
+	background-color: white;
+	margin: 100px;
+	padding-bottom: 10px;
+	padding-right: 50px;
+	padding-left: 100px;
+	box-shadow: 0px 2px 5px #1c1a19;
+}
+
+#img_c
+{
+  float: center;	
+}
+
+#img_g
+{
+	float: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+#fig
+{
+	margin-top: 35px;
+}
+
+#Logo
+{
+	padding: 25px;
+	padding-bottom:10px;
+}
+
+
+#footer
+{
+	background-color: black;
+	color: white;
+	width: 100%;
+	height: 700px;
+	position: absolute;
+}
+
+a
+{
+	color: black;
+	text-decoration: none;
+	margin: 20px;
+}
+
+a:hover
+{
+   color: #FFBF00;
+
+}
+
+table
+{
+    text-align: center;
+    font-family: Arial;
+    font-size: 2.0em;
+    border-collapse: collapse;
+    background-color: white;
+    align-content: center;
+    box-shadow: 3px 2px 2px #1c1a19;
+}
+
+td
+{
+    border: 1px solid black;
+}
+
+th
+{
+   border: 1px solid black;
+   
+}
+
+
+#table th
+{
+  background-color: #DF7401;
+  text-align: center;
+}
+
+#link
+{
+	color: white;
+}
+
+#bouton_don
+{
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border: 3px solid black;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+}

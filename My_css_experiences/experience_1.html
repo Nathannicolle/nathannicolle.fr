@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My css experiences - Experience 1</title>
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<style type="text/css">
+		body
+		{
+			margin:0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			background: #031321;
+			font-family: consolas;
+			text-align: center;
+		}
+
+		h1
+		{
+			color: white;
+		}
+
+		h2
+		{
+			color: white;
+		}
+
+		h3
+		{
+			margin-top: 30px;
+			color: white;
+		}
+
+		h4
+		{
+			color:#2196f3;
+		}
+
+		#lien_classique 
+		{
+			text-decoration: none;
+			color: white;
+		}
+
+		.text
+		{
+			visibility: hidden;
+		}
+
+		#text_button
+		{
+			margin-top: 15px;
+			border-radius: 30px;
+		}
+
+		/* Bouton n°1 (bleu) */
+		
+
+		a
+		{
+			position: relative;
+			display: inline-block;
+			padding: 15px 30px;
+			color: #2196f3;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			text-decoration: none;
+			font-size: 24px;
+			overflow: hidden;
+			transition: 0.2s;
+			cursor: pointer;
+
+		}
+
+		a:hover 
+		{
+   			color: #255784;
+   			background: #2196f3;
+   			box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+   			transition-delay: 1s;
+		}
+
+		a span
+		{
+			position: absolute;
+			display: block;	
+		}
+
+		a span:nth-child(1) 
+		{
+			top: 0;
+			left: -100%;
+			width: 100%;
+			height: 2px;
+			background: linear-gradient(90deg, transparent, #2196f3);
+		}
+
+		a:hover span:nth-child(1)
+		{
+			left: 100%;
+			transition: 1s;
+		}
+
+		a span:nth-child(3)
+		{
+			bottom: 0;
+			right: -100%;
+			width: 100%;
+			height: 2px;
+			background: linear-gradient(270deg, transparent, #2196f3);
+		}
+
+		a:hover span:nth-child(3)
+		{
+			right: 100%;
+			transition: 1s;
+			transition-delay: 0.5s;
+		}
+
+		a span:nth-child(2)
+		{
+			top: -100%;
+			right: 0;
+			width: 2px;
+			height: 100%;
+			background: linear-gradient(180deg, transparent, #2196f3);
+		}
+
+		a:hover span:nth-child(2)
+		{
+			top: 100%;
+			transition: 1s;
+			transition-delay: 0.25s;
+		}
+
+		a span:nth-child(4)
+		{
+			bottom: -100%;
+			left: 0;
+			width: 2px;
+			height: 100%;
+			background: linear-gradient(360deg, transparent, #2196f3);
+		}
+
+		a:hover span:nth-child(4)
+		{
+			bottom: 100%;
+			transition: 1s;
+			transition-delay: 0.75s;
+		}
+
+		p
+		{
+			visibility: hidden;
+			color: white;
+			font-size: 1.4em;
+		}
+	</style>
+</head>
+<body>
+	<img src="mycssexperience_logo.png"/>
+	<h2>Le bouton ci-dessous est un un bouton qui
+	produit </br>une animation de contour animé au survol de la souris</br>
+	avant de finir sur un bouton style néon (style glow)</h2>
+	<a href="experience_2.html" class="blue-btn">
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+	TROISIEME PAGE
+	</a>
+	<a id="text_button" onclick="develop()" dbclick="hide">
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+	▼ Crédits et explications ▼</a>
+	<p class="text">My CSS experience est un site</br>
+	qui regroupe 5 page avec différentes</br>
+	animations, ce site est basé
+	des </br>tutos de Online Tutorials </br>et de Dark Code sur YTB. Aussi </br><u>l'objectif n'est pas de plagier
+	</u></br> le travail du youtubeur <u>ou de copier</br> bêtement</u> mais d'en apprendre plus sur le </br>fonctionnement des éléments d'animation avec</br> le css cela me permet également d'en</br> apprendre plus sur certaines méthodes css.
+	</br>Aussi cela peut éventuellement servir de base </br>pour la restruscturation  future
+	de mon site web. </br> Le site a entièrement
+	été codé en <u>HTML5</u> et <u>CSS3</u> </br><u>sans utilisation
+	du JS (sauf pour l'affichage </br> de
+	ce texte avec le bouton "crédits </br>et explications")</u></br>
+	</br> Codé par Nathan NICOLLE (plus d'infos sur mon site nathannicolle.fr)</br></br>
+	</p>
+
+	<h4>Page 2/5</h4>
+	<script type="text/javascript">
+	function develop(){
+	var hid = document.getElementsByClassName("text");
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+	}
+	</script>
+</body>
+</html>
