@@ -10,6 +10,21 @@
             l'évolution du site</label>
         <div id="grp_cards_actu">
             <div class="cards_actu cards_actu_part3">
+                <div class="card card4">
+					<div class="face face1">
+						<div class="content">
+							<img src="logo_v1_micro.png">
+							<h3>Nouveau logo pour le site</h3>
+						</div>
+					</div>
+					<div class="face face2">
+						<div class="content">
+							<p class="txt_actu">Le logo du site a été modifié afin de
+								moderniser l'identité graphique du site</p>
+							<a href="actu_13.php">Voir plus d'infos</a>
+						</div>
+					</div>
+				</div>
                 <div class="card card5">
 					<div class="face face1">
 						<div class="content">
@@ -41,6 +56,8 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="cards_actu cards_actu_part4">
                 <div class="card card7">
                     <div class="face face1">
                         <div class="content">
@@ -57,8 +74,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="cards_actu cards_actu_part4">
                 <div class="card card8">
                     <div class="face face1">
                         <div class="content">
@@ -89,25 +104,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="card card8">
-                    <div class="face face1">
-                        <div class="content">
-                            <h3>Article de début 2019</h3>
-                        </div>
-                    </div>
-                    <div class="face face2">
-                        <div class="content">
-                            <p class="txt_actu">Il indiquait les objectifs de
-                                l'année 2019 pour mon site</p>
-                            <a href="actu_7.php">Voir plus d'infos</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="pages_suivantes">
             <a href="acc_actu_1.php" class="precedent"><i class="fas fa-chevron-left"></i> Précédent</a><label
-                id="nombre_pages_actu"> Page 2/3 </label><a href="acc_actu_3.php" class="suivant">Suivant <i
+                id="nombre_pages_actu"> Page 2/4 </label><a href="acc_actu_3.php" class="suivant">Suivant <i
                     class="fas fa-chevron-right"></i></a>
         </div>
 <?php

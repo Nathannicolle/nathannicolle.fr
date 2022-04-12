@@ -18,7 +18,21 @@
             <div class="cards_actu">
                 <div class="card">
 					<div class="face face1">
-                        <p class="new">NEW</p>
+						<p class="new">NEW</p>
+						<div class="content">
+						<i class="fas fa-user-tie"></i>
+							<h3>Nouveau projet</h3>
+						</div>
+					</div>
+					<div class="face face2">
+						<div class="content">
+							<p class="txt_actu">Je lance enfin mon auto-entreprise de création de sites web.</p>
+							<a href="actu_19.php">Voir plus d'infos</a>
+						</div>
+					</div>
+				</div>
+                <div class="card">
+					<div class="face face1">
 						<div class="content">
 							<i class="fab fa-php"></i>
 							<i class="fab fa-js"></i>
@@ -44,23 +58,6 @@
                             <p class="txt_actu">Mon profil professionnel est enfin disponible
                                 et accessible depuis l'accueil</p>
                             <a href="actu_17.php">Voir plus d'infos</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card card2">
-                    <div class="face face1">
-                        <div class="content">
-                            <img src="mycssexperience_logo.png" alt="mycssexperience_logo">
-                            <h3>Nouveau site (MyCSSExperience)</h3>
-                        </div>
-                    </div>
-                    <div class="face face2">
-                        <div class="content">
-                            <p>J'ai créé un nouveau site (MyCSSExperience) qui
-                                a servi d'inspiration pour faire la version actuelle
-                                du site</p>
-                            <a href="actu_15.php">Voir plus d'infos</a>
                         </div>
                     </div>
                 </div>
@@ -108,8 +105,8 @@
                         </div>
                     </div>
                 </div>
-                <p id="moi_desc">Je suis Nathan Nicolle, créateur et codeur de ce site.</br> Je suis actuellement
-                    en 1ère année de BTS SIO. </br> J'ai commencé le développement à l'été 2018 alors que</br> j'allais
+                <p id="moi_desc">Je suis Nathan Nicolle, créateur et développeur de ce site.</br> Je suis actuellement
+                    en 2ème année de BTS SIO. </br> J'ai commencé le développement à l'été 2018 alors que</br> j'allais
                     entrer en 1ère STI2D. Et je</br> développe ce site, car j'ai commencé à apprendre </br> le html à
                     l'aide du super site
                     <a href="https://openclassrooms.com/fr/dashboard" target="blank">Openclassrooms</a> Je voulais donc
@@ -145,7 +142,7 @@
     if(isset($_POST['submitpost'])){
         if(isset($_POST['g-recaptcha-response'])){
             if(!empty($_POST['g-recaptcha-response'])) {
-                $recaptcha = new \ReCaptcha\ReCaptcha('');
+                $recaptcha = new \ReCaptcha\ReCaptcha('6LfY7N8ZAAAAAHkzEkgzKioHTDgdU-XGUH6FrVLn');
                 $resp = $recaptcha->verify($_POST['g-recaptcha-response']); //vérification de la réponse renvoyé par le formulaire de captcha
                 if ($resp->isSuccess()) { //si la réponse est un succès alors on exécute le code d'envoi du formulaire
                 // Verified!
@@ -219,13 +216,15 @@
                     </ul>
                     <ul class="mes_sites_footer">
                         <li class="title_list_footer"><b>Mes sites</b></li>
+                        <li><a href="https://nathannicolle.fr/entreprise/" target="blank" title="La création du plastique">Boutique
+                        <i class="fas fa-external-link-alt"></i></a></li>
                         <li><a href="My_css_experiences/accueil.html" target="blank" title="MyCSSExperience">MCE <i
                                     class="fas fa-external-link-alt"></i></a></li>
                         <li><a href="Projet_physique_DD/sauvonsnotreplanete.html" target="blank"
                                 title="La création du plastique">LCDP <i class="fas fa-external-link-alt"></i></a></li>
                     </ul>
                 </div>
-                <label id="copyright"><i class="far fa-copyright"></i> 2021 nathannicolle.fr (V2) - tout droits
+                <label id="copyright"><i class="far fa-copyright"></i> 2021 nathannicolle.fr (V2.2.0) - tout droits
                     réservés</label>
                 <script src="scripts/script.js" type="text/javascript"></script>
             </footer>
@@ -240,6 +239,7 @@
                     <li><a href="acc_actu_1.php"><i class="far fa-newspaper" alt="logo_news_menu"></i> Actus</a>
                         <div class="sub-menu-1">
                             <ul>
+                                <li><a href="actu_19.php">- Nouveau projet</a></li>
                                 <li><a href="actu_18.php">- Mise à jour multi langages</a></li>
                                 <li><a href="actu_17.php">- Nouvelle page de profil professionnel</a></li>
                                 <li><a href="actu_16.php">- Nouvelle version du site</a></li>
@@ -271,6 +271,7 @@
                         </div>
                     </li>
                     <li><a href="about.php"><i class="fas fa-info-circle" alt="logo_info_menu"></i> A propos</a></li>
+                    <li><a href="https://nathannicolle.fr/entreprise/"><i class="fas fa-store-alt"></i> Store</a></li>
                 </ul>
             </div>
             <div class="titles">
@@ -278,15 +279,26 @@
                 <span id="subtitle_acc_temporaire"><br /></span>
                 <span id="subtitle_acc"></span>
             </div>
-            <div id="btns_acc">
-                <div id="btn_voir_plus">
-                    Voir plus<br /><br /><i class="fas fa-angle-double-down"
-                            alt="flèches_voir_plus"></i>
+            <aside class="modal" aria-hidden="false" role="dialog" aria-labelledby="titlemodal" style="display: flex;">
+                <div class="modal_wrapper">
+                    <h1 id="titlemodal">Nouveau projet disponible !</h1>
+                    <p><i class="fas fa-info-circle" title="Cette description sert aux utilisateurs de lecteurs d'écrans à mieux connaître le type d'élément sur lequel ils se trouvent"></i> Ci-dessous vous pouvez soit fermer cette fenêtre soit vous rendre sur le site</p>
+                    <button class="js-modal-close">Fermer</button> <a href="https://nathannicolle.fr/entreprise/" class="visit_website">Visiter</a>
                 </div>
-                <div id="btn_space_pro">
+            </aside>
+            <div id="btns_acc">
+                <div id="auto_entr" class="btn_acc_style">
+                    <a href="https://nathannicolle.fr/entreprise/"><br /> <i
+                            class="fas fa-angle-double-left"></i> Mon auto-entreprise <br /><br /></a>
+                </div>
+                <div id="btn_space_pro" class="btn_acc_style">
                     <a href="profil/index.php"><br />Profil pro <i
                             class="fas fa-angle-double-right"></i><br /><br /></a>
                 </div>
+            </div>
+            <div id="btn_voir_plus" class="btn_acc_style">
+                    Voir plus<br /><br /><i class="fas fa-angle-double-down"
+                            alt="flèches_voir_plus"></i>
             </div>
         </div>
     </header>

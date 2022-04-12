@@ -14,6 +14,20 @@
 					<div class="face face1">
 						<p class="new">NEW</p>
 						<div class="content">
+						<i class="fas fa-user-tie"></i>
+							<h3>Nouveau projet</h3>
+						</div>
+					</div>
+					<div class="face face2">
+						<div class="content">
+							<p class="txt_actu">Je lance enfin mon auto-entreprise de création de sites web.</p>
+							<a href="actu_19.php">Voir plus d'infos</a>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="face face1">
+						<div class="content">
 							<i class="fab fa-php"></i>
 							<i class="fab fa-js"></i>
 							<h3>Mise à jour multi langages</h3>
@@ -41,6 +55,8 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="cards_actu cards_actu_part2">
 				<div class="card card1">
 					<div class="face face1">
 						<div class="content">
@@ -57,8 +73,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="cards_actu cards_actu_part2">
 				<div class="card card2">
 					<div class="face face1">
 						<div class="content">
@@ -90,25 +104,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="card card4">
-					<div class="face face1">
-						<div class="content">
-							<img src="logo_v1_micro.png">
-							<h3>Nouveau logo pour le site</h3>
-						</div>
-					</div>
-					<div class="face face2">
-						<div class="content">
-							<p class="txt_actu">Le logo du site a été modifié afin de
-								moderniser l'identité graphique du site</p>
-							<a href="actu_13.php">Voir plus d'infos</a>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 		<div class="pages_suivantes">
-			<label id="nombre_pages_actu"> Page 1/3 </label><a href="acc_actu_2.php" class="suivant">Suivant <i
+			<label id="nombre_pages_actu"> Page 1/4 </label><a href="acc_actu_2.php" class="suivant">Suivant <i
 					class="fas fa-chevron-right"></i></a>
 		</div>
 	<?php

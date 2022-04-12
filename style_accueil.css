@@ -4,6 +4,10 @@ html {
   overflow: hidden;
 }
 
+*:focus {
+  box-shadow: 0 0 10px blue;
+}
+
 body {
   color: #fff;
   margin: 0;
@@ -266,8 +270,106 @@ sup:hover {
 
 @keyframes clignotement {
   50% {
-    content: "Nouvelle mise à jour disponible !";
+    content: "Le site de mon auto-entreprise est désormais disponible !";
   }
+}
+
+
+/* Style de la fenêtre popup*/
+.modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal_wrapper {
+  width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 100vw;
+  color: black;
+  box-shadow: 0px 0px 10px white;
+  border-radius: 5px;
+  animation: slideFromTop 1s both;
+}
+
+.modal[arria-hidden="true"] .modal_wrapper {
+  animation: slideToBottom .5s both;
+}
+
+@keyframes slideFromTop {
+  from { 
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to { 
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideToBottom {
+  from { 
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  to { 
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+.modal_wrapper h1 {
+  margin-top: 0;
+}
+
+.visit_website {
+  color: black;
+}
+
+.js-modal-close {
+  margin-top: 2%;
+  border: none;
+  width: 25%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.5s;
+  background-color: #b30000;
+  color: white;
+  font-size: 1.2em;
+}
+
+.js-modal-close:hover {
+  cursor: pointer;
+  background-color: Maroon;
+}
+
+.visit_website {
+  margin-top: 2%;
+  width: 25%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.5s;
+  background-color: green;
+  color: white;
+  font-size: 1.2em;
+}
+
+.visit_website:hover {
+  background-color: #004d00;
+}
+
+#titlemodal {
+  font-size: 3em;
+  margin-bottom: 2%;
 }
 
 #btns_acc {
@@ -275,7 +377,46 @@ sup:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 2%;
 }
+
+.btn_acc_style {
+  display: block;
+  border-radius: 50px;
+  transition: 0.5s ease-in-out;
+  border: solid white 1px;
+  padding: 10px;
+  box-shadow: 1px 2px 5px 2px #1c1a19;
+  width: 20%;
+  background-color: white;
+}
+
+.btn_acc_style a {
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+
+.btn_acc_style:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.btn_acc_style:hover a {
+  color: white;
+}
+
+#auto_entr {
+  margin-right: 1%;
+}
+
+#auto_entr i {
+  transition: 0.2s;
+}
+
+#auto_entr:hover i {
+  transform: translateX(-50%);
+}
+
 
 #btn_voir_plus i {
   transition: 0.2s;
@@ -283,18 +424,15 @@ sup:hover {
 
 #btn_voir_plus:hover i {
   transform: translateY(25%);
-}
+} 
 
 #btn_voir_plus {
-  display: block;
-  border-radius: 50px;
-  transition: 0.5s;
-  border: solid white 1px;
-  padding: 10px;
   padding-left: 15px;
-  box-shadow: 1px 2px 5px 2px #1c1a19;
-  width: 20%;
   margin-right: 10px;
+  background-color: transparent;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #btn_voir_plus:hover {
@@ -302,30 +440,6 @@ sup:hover {
   background-color: white;
   color: black;
   text-align: center;
-}
-
-#btn_space_pro {
-  display: block;
-  width: 20%;
-  height: 86px;
-}
-
-#btn_space_pro a {
-  display: block;
-  border-radius: 50px;
-  transition: 0.5s;
-  padding: 10px;
-  padding-left: 15px;
-  box-shadow: 1px 2px 5px 2px #1c1a19;
-  background-color: white;
-  color: black;
-}
-
-#btn_space_pro a:hover {
-  text-align: center;
-  border: solid white 1px;
-  background-color: transparent;
-  color: white;
 }
 
 #btn_space_pro i {

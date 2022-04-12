@@ -10,6 +10,20 @@
             l'évolution du site</label>
         <div id="grp_cards_actu">
             <div class="cards_actu cards_actu_part5">
+                <div class="card card8">
+                    <div class="face face1">
+                        <div class="content">
+                            <h3>Article de début 2019</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p class="txt_actu">Il indiquait les objectifs de
+                                l'année 2019 pour mon site</p>
+                            <a href="actu_7.php">Voir plus d'infos</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="card card9">
                     <div class="face face1">
                         <div class="content">
@@ -40,6 +54,8 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="cards_actu cards_actu_part6">
                 <div class="card card11">
                     <div class="face face1">
                         <div class="content">
@@ -56,8 +72,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="cards_actu cards_actu_part6">
                 <div class="card card12">
                     <div class="face face1">
                         <div class="content">
@@ -107,7 +121,8 @@
         </div>
         <div class="pages_suivantes">
             <a href="acc_actu_2.php" class="precedent"><i class="fas fa-chevron-left"></i> Précédent</a><label
-                id="nombre_pages_actu"> Page 3/3 </label>
+                id="nombre_pages_actu"> Page 3/4 </label> <a href="acc_actu_4.php" class="suivant">Suivant <i
+                    class="fas fa-chevron-right"></i></a>
         </div>
     <?php
 		include "structure/footer.html";

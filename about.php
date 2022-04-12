@@ -51,7 +51,7 @@
     if(isset($_POST['submitpost'])){
         if(isset($_POST['g-recaptcha-response'])){
             if(!empty($_POST['g-recaptcha-response'])) {
-                $recaptcha = new \ReCaptcha\ReCaptcha('key');
+                $recaptcha = new \ReCaptcha\ReCaptcha('6LfY7N8ZAAAAAHkzEkgzKioHTDgdU-XGUH6FrVLn');
                 $resp = $recaptcha->verify($_POST['g-recaptcha-response']); //vérification de la réponse renvoyé par le formulaire de captcha
                 if ($resp->isSuccess()) { //si la réponse est un succès alors on exécute le code d'envoi du formulaire
                 // Verified!
